@@ -1,46 +1,126 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>course assingment</title>
-</head>
-  <body>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-   
-    p {
-     border: 1px solid;
-      margin-bottom: 15px
-    
-     #p1 {
-       background-color: 002ede
-          width: 300;
-      height: 300}
-    }
-    #p2 {
-       background-color: 002ede
-          width: 300;
-      height: 300}
-    }
-     #p3 {
-       background-color: 002ede
-          width: 300;
-      height: 300}
-    }
-    
-    @media (min-width: 1200px)
-      #p1 {width: 80%}
-   
-    </style>
-    
-    <h1> Module 2 assing..</h1>
+* {
+  box-sizing: border-box;
+  }
   
+    h1 
+    {
+    text-align:center
+    }
+    
+    section 
+    {
+    border: 2px solid;
+    float:right;
+     height:200px
+    }
+   
+    p 
+    {
+    padding:15px;
+    }
+    
+    #sushi 
+    {
+    border: 2px solid;
+    background-color: #85e08e;
+    float:right;
+    padding: 5px 20px 5px 20px;
+    }
+    #beef
+    {
+    border: 2px solid;
+    background-color: #85e08e;
+    float:right;
+    padding: 5px 20px 5px 20px;
+    }
+    #chicken
+    {
+    border: 2px solid;
+    background-color: #85e08e;
+    float:right;
+    padding: 5px 20px 5px 20px;
+    }
+    
+  .sushi 
+  {
+  background-color: #b197ed;
+  float: left;
+  margin: 10px;
+  width: 30%;
+  }
+
+  .beef 
+  {
+  background-color: #ffff83;
+  float: left;
+  margin: 10px;
+  width: 30%;
+  }
+
+  .chicken
+  {
+  background-color: #c3cecd;
+  float: left;
+  margin: 10px;
+  width: 30%;
+  }
+
   
- <p><id="p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sapien eu mi molestie ultrices. Sed vehicula suscipit orci nec vestibulum. Donec convallis ut sem et scelerisque. Duis quis diam id lectus mollis convallis a quis elit. Etiam placerat ante</p>
+  @media (max-width: 992px) 
+  {
+  .sushi, .beef, .chicken 
+  
+  .sushi 
+  {
+  background-color: #b197ed;
+  float: left;
+  width: 47%;
+  }
+
+  .beef 
+  {
+  background-color: #ffff83;
+  float: left;
+  width: 47%;
+  }
+
+  .chicken 
+  {
+  background-color: #c3cecd;
+    float: left;
+  width: 90%;
+  }
+  {
+  width: 100%;
+  }
+  }
  
-    <p><id="p2"> quis mauris hendrerit, et egestas orci congue. Mauris tortor dolor, egestas eget lacus in, tempus lacinia eros. Fusce suscipit a velit at volutpat. Curabitur lacus elit, vulputate sit amet dolor quis, lobortis pretium sapien. Donec porta congue nisl, at</p>
-  
-    <p><id="p3">volutpat mauris sollicitudin interdum. Pellentesque vulputate felis vitae nulla sodales iaculis. Sed facilisis, velit ut laoreet efficitur, odio velit mattis dolor, ut hendrerit nunc turpis sed nibh. Morbi feugiat metus et tempus tempor. Aliquam fringilla viverra viverra.</p>
-  
-</body>
-     
+  @media (max-width: 768px) 
+  {
+  .sushi, .beef, .chicken 
+  {
+  width: 90%;
+  }
+  }
+</style>
+</head>
+<body>
+
+   <h1>Media Queries</h1>
+      
+<section class="sushi"><div id="sushi">Sushi</div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sapien eu mi molestie ultrices. Sed vehicula suscipit orci nec vestibulum. Donec convallis ut sem et scelerisque. Duis quis diam id lectus mollis convallis a quis elit. Etiam placerat ante quis mauris hendrerit, et </p>
+</section>
+
+  <section class="beef"><div id="beef">Beef</div><p>egestas orci congue. Mauris tortor dolor, egestas eget lacus in, tempus lacinia eros. Fusce suscipit a velit at volutpat. Curabitur lacus elit, vulputate sit amet dolor quis, lobortis pretium sapien. Donec porta congue nisl, at volutpat</p>
+</section>
+
+  <section class="chicken"><div id="chicken">Chicken</div><p>mauris sollicitudin interdum. Pellentesque vulputate felis vitae nulla sodales iaculis. Sed facilisis, velit ut laoreet efficitur, odio velit mattis dolor, ut hendrerit nunc turpis sed nibh. Morbi feugiat metus et tempus tempor. Aliquam fringilla viverra viverra.</p>
+</section>
+    
+  </body>
 </html>
